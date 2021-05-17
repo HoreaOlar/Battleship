@@ -53,13 +53,14 @@ void loop(){
   if(printed <1)
     printBattleship();
   //move();
+  if(printed==0)
+    placeShipsPlayer1();
   for(int i=0;i<8;i++)
     for(int j=0;j<8;j++)
       if(Board[i][j]==1);
         //lc.setLed(0,i,j,true);
-   move();
-  //if(printed==0)
-    //placeShipsPlayer1();
+   //move();
+  
    
   for(int i=0;i<8;i++)
     for(int j=0;j<8;j++)
